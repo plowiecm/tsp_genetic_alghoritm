@@ -13,6 +13,8 @@ public class Main {
 
         System.out.println("Please enter name of file to read");
         String name = scan.next();
+        System.out.println("Please enter population size");
+        int populationSize = scan.nextInt();
         System.out.println("Please enter parameter k for tournament selection");
         int parameterK = scan.nextInt();
         int[][] distances = FileOperator.readFileToArray("resources\\" + name + ".txt");
@@ -20,7 +22,7 @@ public class Main {
         int minDistance;
         int[] minDistanceTour;
 
-        Population population = new Population(distances.length, 9000, distances);
+        Population population = new Population(distances.length, populationSize, distances);
         population.makePopulation();
 
         minDistance = getMin(population.countLengths(), population);
