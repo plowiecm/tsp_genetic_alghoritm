@@ -1,4 +1,4 @@
-package com.company;
+package tsp;
 
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.company;
+package tsp;
 
 import java.util.*;
 

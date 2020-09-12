@@ -1,4 +1,4 @@
-package com.company;
+package tsp;
 
 public class InvalidStructureException extends Throwable {
     public InvalidStructureException() {

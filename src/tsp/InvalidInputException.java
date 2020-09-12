@@ -1,4 +1,4 @@
-package com.company;
+package tsp;
 
 public class InvalidInputException extends Throwable {
     public InvalidInputException(String wrongDistanceInGivenFile) {
